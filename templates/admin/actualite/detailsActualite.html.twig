@@ -1,0 +1,20 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+    details de l'actualite du Club de Shorinji Kempo de Gennevilliers{{actualite.titre }}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8 col-lg-8 col-sm-12">
+        
+            <h1> Detail de l'actualite n° {{ actualite.id }}</h1>
+            <h5><strong>titre : </strong> {{ actualite.titre }}</h5> 
+               
+            <p><strong>description : </strong> {{ actualite.description }}</p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <img class="img-fluid" src="{{ asset('photos/article/' ~ actualite.photo) }}"  alt="{{ actualite.titre }}">
+        </div>
+    </div>
+{% endblock %}

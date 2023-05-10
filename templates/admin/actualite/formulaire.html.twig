@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+
+{% block title %} formulaire des actualite du Club de Shorinji Kempo de Gennevilliers{% endblock %}
+
+{% block content %}
+<img src={{asset('photos/autre/shorinjiKempo_blanc.png')}} width = "100%">
+<h1>Ajout d'actualités</h1>
+
+
+    {{ form(formActualite) }}
+
+{% endblock %}

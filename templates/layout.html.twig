@@ -1,0 +1,264 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<header>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+	<div class="container-fluid">
+<a class="navbar-brand"><img src={{asset('photos/autre/shorinjiKempo_blanc.png')}} width = "20%">Club de Gennevilliers</a>
+
+	
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-1">
+
+
+
+
+
+					{% if is_granted("IS_AUTHENTICATED_FULLY") and is_granted("ROLE_ADMIN") %}
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Admin
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li>
+								<a class="dropdown-item" href="{{ path('admin_app_article_add') }}">Ajout d'
+																articles
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="{{ path('admin_app_categorie_add') }}">Ajout de
+																catégories
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="{{ path('admin_app_actualite_add') }}">Ajout d'
+																actualités
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="{{ path('admin_app_categories') }}">Gestion des
+																catégories
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="{{ path('admin_app_articles_gestion') }}">Gestion des
+																  articles</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="{{ path('admin_app_actualites_gestion') }}">Gestion des
+																  actualités</a>
+							</li>
+						</ul>
+					</li>
+
+					{% endif %}
+
+
+
+
+
+
+
+
+
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="{{ path('app_accueil') }}">Accueil</a>
+						</li>
+
+
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Le Club
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+							<li>
+								<a class="dropdown-item" href="{{ path('app_historique') }}">
+								Historique
+
+								</a>
+							</li>
+
+							
+								<li>
+									<a class="dropdown-item" href="{{ path('app_professeur') }}">
+									Les professeurs
+
+									</a>
+								</li>
+								
+								<li>
+									<a class="dropdown-item" href="{{ path('app_cours') }}">
+									Les cours
+									</a>
+								</li>
+							</ul>	
+						</li>	
+
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Actualités
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+								<li>
+									<a class="dropdown-item" href="{{ path('app_home') }}">
+									Les dernières actualités
+
+									</a>
+								</li>
+								
+								<li>
+									<a class="dropdown-item" href="{{ path('app_articles') }}">Tous les 
+																articles
+									</a>
+								</li>
+							
+							</ul>
+						</li>
+
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Infos
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								
+								<li>  
+									<a class="dropdown-item" href="{{ path('app_informations') }}">
+									Inscriptions
+									</a>
+								</li>
+
+								<li>  
+									<a class="dropdown-item" href="{{ path('app_contact') }}">
+									Contact
+									</a>
+								</li>
+							
+							</ul>
+						</li>
+
+
+
+
+
+						
+
+
+						{#si aucun user n'est connecté(authentifié), on affiche les boutons suivants#}
+						{% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+
+
+
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Administration
+							</a>
+
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li>
+									<a class="" href="{{ path('app_login') }}">Connexion</a>
+								</li>
+
+								<li>
+									<a class="" href="{{ path('app_register') }}">Inscription</a>
+								</li>
+								{#si un user est authentifié, on affiche uniquement le bouton de déconnexion#}
+								{% else %}
+
+								<li>
+									<a class="nav-link" href="{{ path('app_logout') }}">Déconnexion</a>
+								</li>
+							</ul>	
+						</li>
+						
+						
+						
+						
+					{% endif %}
+
+
+						{# <li class="nav-item text-right">
+							<a class="nav-link" href="">panier</a>
+						</li> #}
+
+						
+
+
+						
+
+					</ul>
+				</div>
+
+				
+
+
+			</div>
+		</nav>
+	</header>
+
+
+	<div class="mainpage">
+	<main class="container mb-5 mt-5">
+
+
+
+	
+
+		{% for message in app.flashes('success') %}
+		<div class="alert alert-success text-center">
+				{{ message }}
+		</div>
+	{% endfor %}
+
+
+		{% for message in app.flashes('error') %}
+		<div class="alert alert-danger text-center">
+				{{ message }}
+		</div>
+	{% endfor %}
+
+
+		{% block content %}
+
+			{% block final_js %}
+				{# insertion des script propre à chaque page #}
+			{% endblock %}
+		{% endblock %}
+	</main>
+	</div>
+
+	<footer class="bg-dark">
+		<div class="text-center text-white">
+			<div class="social">
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i>	
+				<a href="#" target="_blank"><i class="fab fa-facebook-f"></i>	
+				<a href="#" target="_blank"><i class="fab fa-twitter"></i>	
+			</div>
+		<a href="{{ path('app_mentions') }}" target="">Mentions légales</a>
+		<a class="pipe">|</a>
+		<a href="https://shorinjikempo.fr/federation/" target="_blank">Fédération Française de Shorinji Kempo</a>
+	</footer>
+{% endblock %}

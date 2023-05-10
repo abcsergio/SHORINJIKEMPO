@@ -1,0 +1,152 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Les professeurs et le président du Club de Shorinji Kempo de Gennevilliers{% endblock %}
+
+{% block content %}
+
+<div class="example-wrapper">
+    <div class="cont">
+        <img src={{asset('photos/autre/logo_rouge-gris-noir_fond-clair.png')}} width = "20%">
+    </div>
+    <br>
+        <hr>
+    <h1 class="title"> Les Professeurs de Shorinji Kempo à Gennevilliers{{ controller_name }}</h1>
+
+            <br>
+            
+
+        <div class="justify-content-center">
+            <h2>Julien Delord <i>(Professeur principal)</i></h2>
+
+             
+
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                    <div class="inner">
+                        <img src={{asset('photos/professeur/Julien4.jpg')}} width = "100%" alt="portrait de Julien Delord">
+                        
+                    </div>    
+        </div>
+            <br>
+            <br>
+            <br>
+
+    <div class="justify-content-center">
+        <h2>Obiwan <i>(Professeur assistant)</i></h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+    
+                <div class="inner">
+                    <img src={{asset('photos/professeur/profA1.jpg')}} width = "100%" alt="portrait de Obiwan">
+                </div>    
+    </div>
+            <br>
+            <br>
+            <br>
+
+    <div class="justify-content-center">
+        <h2>José Jimenez <i>(Président, Coordinateur)</i></h2>
+            
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+    
+                <div class="inner">
+                    <img src={{asset('photos/professeur/jose1.jpg')}} width = "100%" alt="portrait de José Jimenez">
+                </div>    
+    </div>
+
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+    
+
+
+                    <div class="container"> 
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-xs-12">
+                                        <div class="section-header text-center">
+                                            <div class="section-separator border-center">
+                                            {# ::before
+                                            ::after     #}
+                                        </div>
+                                    <h5 class="section-subtitle"> Rejoignez-nous </h5>
+                                        <h4 class="section-title"> Gennevilliers Shorinji Kempo </h4>
+                                        </div>
+                                    </div> 
+                                </div> 
+
+                        <div class="row" id="service_content_section">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="post text-center wow flipInx animated" data-wow-delay=".5s">
+                                    <figure class="post-thumbnail">
+                                        <a href="{{ path('app_informations') }}">
+                                            <i class="fa fa-clock txt-pink"></i>
+                                            {# ::before #}
+                                            </i>
+                                        </a>  
+                                    </figure>
+                                <div class="entry-header">
+                                    <h4 class="entry-title">
+                                        <a href="{{ path('app_informations') }}">Horaires</a> 
+                                    </h4> 
+                                </div>
+                                    <div class="entry-content">
+                                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                                    </div>     
+                                </div> 
+                            </div> 
+                            
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="post text-center wow flipInx animated" data-wow-delay=".5s">
+                                    <figure class="post-thumbnail">
+                                        <a href="https://goo.gl/maps/dMFQGnb9dSDSXSt77" target="_blank">
+                                            <i class="fa fa-location-arrow txt-pink">
+                                        
+                                            </i>
+                                        </a>
+                                    </figure>  
+                                <div class="entry-header">
+                                    <h4 class="entry-title">
+                                        <a href="https://goo.gl/maps/dMFQGnb9dSDSXSt77" target="_blank">Adresse</a>   
+                                    </h4>  
+                                </div> 
+                                    <div class="entry-content">
+                                        <p>Gymnase Gustave Caillebotte </br>
+                                                19 rue Deslandes </br>
+                                                92230 Gennevilliers</p> 
+                                    
+                                    </div> 
+                                </div> 
+                            </div> 
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="post text-center wow flipInx animated" data-wow-delay=".5s">
+                                <figure class="post-thumbnail">
+                                    <a href="{{ path('app_contact') }}">
+                                        <i class="fa fa fa-phone txt-pink">
+                                        {# ::before #}
+                                        </i>
+                                    </a>    
+                                </figure>    
+                            <div class="entry-header">
+                                <h4 class="entry-title">
+                                    <a href="{{ path('app_contact') }}">Contact</a> 
+                                </h4>
+                            </div>  
+                        <div class="entry-content">
+                            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                        </div>        
+                    </div> 
+                </div>  
+            </div>   
+
+</div>
+{% endblock %}

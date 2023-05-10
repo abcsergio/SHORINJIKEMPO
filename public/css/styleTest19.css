@@ -1,0 +1,78 @@
+
+
+.title{
+    color: rgb(14, 3, 3);
+}
+
+
+.card-body{
+    margin-left: 10%;
+}
+
+.col-md-6{
+    margin-left: -1.6%;
+    
+}
+
+.cont{
+    text-align: center;
+}
+
+.ulaccueil{
+    font-size: 22px;
+}
+
+p{
+    font-size: 22px;
+}
+
+#test{
+    background-color: rgb(204, 23, 23);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.btn-primary{
+    border-radius: 20px;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+.inner2 img{
+    object-fit: cover;
+}
+
+
+.btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

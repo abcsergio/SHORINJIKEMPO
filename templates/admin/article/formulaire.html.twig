@@ -1,0 +1,11 @@
+{% extends "layout.html.twig" %}
+
+{% block title %} formulaire des articles du Club de Shorinji Kempo de Gennevilliers {% endblock %}
+
+{% block content %}
+<img src={{asset('photos/autre/shorinjiKempo_blanc.png')}} width = "100%">
+<h1>Ajout d'articles</h1>
+
+    {{ form(formArticle) }}
+
+{% endblock %}
