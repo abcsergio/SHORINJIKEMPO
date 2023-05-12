@@ -110,7 +110,7 @@ class __TwigTemplate_7f008f05e75847107fec5ae30c392b1e extends Template
 
 
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    4ème DAN, élève de José Jimenez
                 </p>
                     <div class=\"inner\">
                         <img src=";
@@ -125,16 +125,16 @@ class __TwigTemplate_7f008f05e75847107fec5ae30c392b1e extends Template
             <br>
 
     <div class=\"justify-content-center\">
-        <h2>Obiwan <i>(Professeur assistant)</i></h2>
+        <h2>Jamaa Abidar <i>(Professeur assistant)</i></h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                1ère DAN
             </p>
     
                 <div class=\"inner\">
                     <img src=";
         // line 43
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("photos/professeur/profA1.jpg"), "html", null, true);
-        echo " width = \"100%\" alt=\"portrait de Obiwan\">
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("photos/professeur/prof2.jpg"), "html", null, true);
+        echo " width = \"100%\" alt=\"portrait de Jamaa Abidar\">
                 </div>    
     </div>
             <br>
@@ -145,7 +145,7 @@ class __TwigTemplate_7f008f05e75847107fec5ae30c392b1e extends Template
         <h2>José Jimenez <i>(Président, Coordinateur)</i></h2>
             
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                7ème DAN, élève de M.Najhi, 6ème DAN et assistant de Maître Aosaka, 9ème DAN
             </p>
     
                 <div class=\"inner\">
@@ -310,7 +310,7 @@ class __TwigTemplate_7f008f05e75847107fec5ae30c392b1e extends Template
 
 
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    4ème DAN, élève de José Jimenez
                 </p>
                     <div class=\"inner\">
                         <img src={{asset('photos/professeur/Julien4.jpg')}} width = \"100%\" alt=\"portrait de Julien Delord\">
@@ -322,13 +322,13 @@ class __TwigTemplate_7f008f05e75847107fec5ae30c392b1e extends Template
             <br>
 
     <div class=\"justify-content-center\">
-        <h2>Obiwan <i>(Professeur assistant)</i></h2>
+        <h2>Jamaa Abidar <i>(Professeur assistant)</i></h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                1ère DAN
             </p>
     
                 <div class=\"inner\">
-                    <img src={{asset('photos/professeur/profA1.jpg')}} width = \"100%\" alt=\"portrait de Obiwan\">
+                    <img src={{asset('photos/professeur/prof2.jpg')}} width = \"100%\" alt=\"portrait de Jamaa Abidar\">
                 </div>    
     </div>
             <br>
@@ -339,7 +339,7 @@ class __TwigTemplate_7f008f05e75847107fec5ae30c392b1e extends Template
         <h2>José Jimenez <i>(Président, Coordinateur)</i></h2>
             
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                7ème DAN, élève de M.Najhi, 6ème DAN et assistant de Maître Aosaka, 9ème DAN
             </p>
     
                 <div class=\"inner\">

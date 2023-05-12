@@ -92,7 +92,7 @@ class __TwigTemplate_d3bd6cd3843ce734bec431fd5ee34bf9 extends Template
         echo " width = \"20%\">
         </div>
         <hr>
-    <h1>Register</h1>
+        <h5><i>Section réservée à l'administration du site</i></h5>
 
         ";
         // line 12
@@ -189,7 +189,7 @@ class __TwigTemplate_d3bd6cd3843ce734bec431fd5ee34bf9 extends Template
         <img src={{asset('photos/autre/logo_rouge-gris-noir_fond-clair.png')}} width = \"20%\">
         </div>
         <hr>
-    <h1>Register</h1>
+        <h5><i>Section réservée à l'administration du site</i></h5>
 
         {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.nom) }}

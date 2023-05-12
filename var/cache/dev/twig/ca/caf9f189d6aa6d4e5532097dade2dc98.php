@@ -169,7 +169,7 @@ class __TwigTemplate_bc1534d26bb7fd95fed1a702b6a3128f extends Template
 
 \t\t\t\t\t\t<li class=\"nav-item dropdown\">
 \t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-\t\t\t\t\t\t\tLe Club
+\t\t\t\t\t\t\tClub
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
 
@@ -208,7 +208,7 @@ class __TwigTemplate_bc1534d26bb7fd95fed1a702b6a3128f extends Template
 
 \t\t\t\t\t\t<li class=\"nav-item dropdown\">
 \t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-\t\t\t\t\t\t\tActualités
+\t\t\t\t\t\t\tNews
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
 
@@ -226,7 +226,7 @@ class __TwigTemplate_bc1534d26bb7fd95fed1a702b6a3128f extends Template
 \t\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"";
         // line 119
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_articles");
-        echo "\">Tous les 
+        echo "\">Les 
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tarticles
 \t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t</li>
@@ -569,7 +569,7 @@ class __TwigTemplate_bc1534d26bb7fd95fed1a702b6a3128f extends Template
 
 \t\t\t\t\t\t<li class=\"nav-item dropdown\">
 \t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-\t\t\t\t\t\t\tLe Club
+\t\t\t\t\t\t\tClub
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
 
@@ -599,7 +599,7 @@ class __TwigTemplate_bc1534d26bb7fd95fed1a702b6a3128f extends Template
 
 \t\t\t\t\t\t<li class=\"nav-item dropdown\">
 \t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-\t\t\t\t\t\t\tActualités
+\t\t\t\t\t\t\tNews
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
 
@@ -611,7 +611,7 @@ class __TwigTemplate_bc1534d26bb7fd95fed1a702b6a3128f extends Template
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"{{ path('app_articles') }}\">Tous les 
+\t\t\t\t\t\t\t\t\t<a class=\"dropdown-item\" href=\"{{ path('app_articles') }}\">Les 
 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tarticles
 \t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t</li>
