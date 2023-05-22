@@ -231,17 +231,12 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
                 <p>
                 
                 <p><strong>Goho</strong> est l'application du principe dur du <i>Kongo Zen</i>, qui comprend les esquives ainsi que les parades et toutes les techniques de frappes, que ce soit avec les pieds ou les poings.</p>
-                ";
-        // line 132
-        echo "                <br>
+                
+                <br>
                 <p><strong>Juho</strong> est l'application du principe souple du <i>Kongo Zen</i>, qui comprend les techniques de dégagement ou de blocage, ainsi que les techniques de projection et d'immobilisation au sol.</p>
-                ";
-        // line 135
-        echo "                <br>
+                <br>
                 <p><strong>Seiho</strong> est la partie de l'enseignement qui regroupe des techniques de remise en forme et de relaxation qui portent sur les points vitaux et sur la maîtrise de la respiration.</p>
-                ";
-        // line 138
-        echo "
+
             
             <hr>
             <br>
@@ -249,7 +244,7 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
             <h5>Les grades au <strong><i>Shorinji Kempo</i></strong></h5>
                 <div class=\"inner4\">
                     <img src=";
-        // line 145
+        // line 142
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("photos/autre/a.jpg"), "html", null, true);
         echo " width = \"100%\"> 
                 </div>
@@ -279,7 +274,7 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
                             <div class=\"post text-center wow flipInx animated\" data-wow-delay=\".5s\">
                                 <figure class=\"post-thumbnail\">
                                     <a href=\"";
-        // line 172
+        // line 169
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_informations");
         echo "\">
                                         <i class=\"fa fa-clock txt-pink\">
@@ -289,7 +284,7 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
                                 <div class=\"entry-header\">
                                     <h4 class=\"entry-title\">
                                         <a href=\"";
-        // line 179
+        // line 176
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_informations");
         echo "\">Horaires</a> 
                                     </h4> 
@@ -325,7 +320,7 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
                             <div class=\"post text-center wow flipInx animated\" data-wow-delay=\".5s\">
                                 <figure class=\"post-thumbnail\">
                                     <a href=\"";
-        // line 212
+        // line 209
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         echo "\">
                                         <i class=\"fa fa fa-phone txt-pink\">                       
@@ -335,7 +330,7 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
                             <div class=\"entry-header\">
                                 <h4 class=\"entry-title\">
                                     <a href=\"";
-        // line 219
+        // line 216
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_contact");
         echo "\">Contact</a> 
                                 </h4>
@@ -373,7 +368,7 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
 
     public function getDebugInfo()
     {
-        return array (  339 => 219,  329 => 212,  293 => 179,  283 => 172,  253 => 145,  244 => 138,  240 => 135,  236 => 132,  222 => 118,  198 => 96,  164 => 65,  138 => 42,  130 => 37,  122 => 32,  114 => 27,  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  334 => 216,  324 => 209,  288 => 176,  278 => 169,  248 => 142,  222 => 118,  198 => 96,  164 => 65,  138 => 42,  130 => 37,  122 => 32,  114 => 27,  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -507,14 +502,11 @@ class __TwigTemplate_d5c2a4e67b17580bc84dad6b04cbefff extends Template
                 <p>
                 
                 <p><strong>Goho</strong> est l'application du principe dur du <i>Kongo Zen</i>, qui comprend les esquives ainsi que les parades et toutes les techniques de frappes, que ce soit avec les pieds ou les poings.</p>
-                {# <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/NShmJGNdwqs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
-                <br> #}
+                
                 <br>
                 <p><strong>Juho</strong> est l'application du principe souple du <i>Kongo Zen</i>, qui comprend les techniques de dégagement ou de blocage, ainsi que les techniques de projection et d'immobilisation au sol.</p>
-                {# <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uMVBvGozw-o\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe> #}
                 <br>
                 <p><strong>Seiho</strong> est la partie de l'enseignement qui regroupe des techniques de remise en forme et de relaxation qui portent sur les points vitaux et sur la maîtrise de la respiration.</p>
-                {# <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WrJTjfN_YRE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe> #}
 
             
             <hr>
