@@ -23,25 +23,6 @@ class ActualiteController extends AbstractController
 
 
 
-    // #[Route('/actualites/{slug}', name: 'app_actualites_categorie')]
-    // public function showByCategorie(CategorieRepository $repo, $slug)
-    // {
-
-    //     //on recupere la catégorie sur laquelle on a cliqué dont le slug se trouve dans la route
-    //     $categorie = $repo->findOneBy(['slug' => $slug]);
-
-    //     // on recupere toutes les categories pour les afficher dans le menu de la page
-    //     $categories = $repo->findAll();
-
-    //     return $this->render('article/allArticles.html.twig', [
-    //         'categories' => $categories,
-    //         'articles' => $categorie->getArticles()
-    //     ]);
-    // }
-
-
-
-
     #[Route('/actualite/{id<\d+>}', name: 'app_actualite_show')]
     public function show($id, ActualiteRepository $repo)
     {

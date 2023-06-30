@@ -612,23 +612,12 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
     }
     
     /**
-     * @template TValue
-     * @param TValue $value
      * annotation configuration
-     * @default {"enabled":false,"cache":"php_array","file_cache_dir":"%kernel.cache_dir%\/annotations","debug":true}
-     * @return \Symfony\Config\Framework\AnnotationsConfig|$this
-     * @psalm-return (TValue is array ? \Symfony\Config\Framework\AnnotationsConfig : static)
-     */
-    public function annotations(array $value = []): \Symfony\Config\Framework\AnnotationsConfig|static
+     * @default {"enabled":true,"cache":"php_array","file_cache_dir":"%kernel.cache_dir%\/annotations","debug":true}
+    */
+    public function annotations(array $value = []): \Symfony\Config\Framework\AnnotationsConfig
     {
-        if (!\is_array($value)) {
-            $this->_usedProperties['annotations'] = true;
-            $this->annotations = $value;
-    
-            return $this;
-        }
-    
-        if (!$this->annotations instanceof \Symfony\Config\Framework\AnnotationsConfig) {
+        if (null === $this->annotations) {
             $this->_usedProperties['annotations'] = true;
             $this->annotations = new \Symfony\Config\Framework\AnnotationsConfig($value);
         } elseif (0 < \func_num_args()) {
@@ -905,23 +894,12 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
     }
     
     /**
-     * @template TValue
-     * @param TValue $value
      * Mailer configuration
-     * @default {"enabled":false,"message_bus":null,"dsn":null,"transports":[],"headers":[]}
-     * @return \Symfony\Config\Framework\MailerConfig|$this
-     * @psalm-return (TValue is array ? \Symfony\Config\Framework\MailerConfig : static)
-     */
-    public function mailer(array $value = []): \Symfony\Config\Framework\MailerConfig|static
+     * @default {"enabled":true,"message_bus":null,"dsn":null,"transports":[],"headers":[]}
+    */
+    public function mailer(array $value = []): \Symfony\Config\Framework\MailerConfig
     {
-        if (!\is_array($value)) {
-            $this->_usedProperties['mailer'] = true;
-            $this->mailer = $value;
-    
-            return $this;
-        }
-    
-        if (!$this->mailer instanceof \Symfony\Config\Framework\MailerConfig) {
+        if (null === $this->mailer) {
             $this->_usedProperties['mailer'] = true;
             $this->mailer = new \Symfony\Config\Framework\MailerConfig($value);
         } elseif (0 < \func_num_args()) {
@@ -1231,7 +1209,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
     
         if (array_key_exists('annotations', $value)) {
             $this->_usedProperties['annotations'] = true;
-            $this->annotations = \is_array($value['annotations']) ? new \Symfony\Config\Framework\AnnotationsConfig($value['annotations']) : $value['annotations'];
+            $this->annotations = new \Symfony\Config\Framework\AnnotationsConfig($value['annotations']);
             unset($value['annotations']);
         }
     
@@ -1309,7 +1287,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
     
         if (array_key_exists('mailer', $value)) {
             $this->_usedProperties['mailer'] = true;
-            $this->mailer = \is_array($value['mailer']) ? new \Symfony\Config\Framework\MailerConfig($value['mailer']) : $value['mailer'];
+            $this->mailer = new \Symfony\Config\Framework\MailerConfig($value['mailer']);
             unset($value['mailer']);
         }
     
@@ -1436,7 +1414,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
             $output['validation'] = $this->validation->toArray();
         }
         if (isset($this->_usedProperties['annotations'])) {
-            $output['annotations'] = $this->annotations instanceof \Symfony\Config\Framework\AnnotationsConfig ? $this->annotations->toArray() : $this->annotations;
+            $output['annotations'] = $this->annotations->toArray();
         }
         if (isset($this->_usedProperties['serializer'])) {
             $output['serializer'] = $this->serializer instanceof \Symfony\Config\Framework\SerializerConfig ? $this->serializer->toArray() : $this->serializer;
@@ -1475,7 +1453,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
             $output['http_client'] = $this->httpClient instanceof \Symfony\Config\Framework\HttpClientConfig ? $this->httpClient->toArray() : $this->httpClient;
         }
         if (isset($this->_usedProperties['mailer'])) {
-            $output['mailer'] = $this->mailer instanceof \Symfony\Config\Framework\MailerConfig ? $this->mailer->toArray() : $this->mailer;
+            $output['mailer'] = $this->mailer->toArray();
         }
         if (isset($this->_usedProperties['secrets'])) {
             $output['secrets'] = $this->secrets->toArray();

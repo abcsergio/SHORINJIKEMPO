@@ -5,7 +5,6 @@
 	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 	<div class="container-fluid">
 <a class="navbar-brand"><img src={{asset('photos/autre/shorinjiKempo_blanc.png')}} width = "20%">Club de Gennevilliers</a>
-
 	
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +12,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-1">
-
-
-
-
 
 					{% if is_granted("IS_AUTHENTICATED_FULLY") and is_granted("ROLE_ADMIN") %}
 
@@ -59,17 +54,9 @@
 					{% endif %}
 
 
-
-
-
-
-
-
-
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="{{ path('app_accueil') }}">Accueil</a>
 						</li>
-
 
 
 						<li class="nav-item dropdown">
@@ -147,29 +134,8 @@
 						</li>
 
 
-
-
-
-						
-
-
 						{#si aucun user n'est connecté(authentifié), on affiche les boutons suivants#}
 						{% if not is_granted('IS_AUTHENTICATED_FULLY') %}
-
-
-
-
-
-
-						
-
-
-
-
-
-
-
-
 
 
 						<li class="nav-item dropdown">
@@ -205,15 +171,8 @@
 						</li> #}
 
 						
-
-
-						
-
 					</ul>
 				</div>
-
-				
-
 
 			</div>
 		</nav>
