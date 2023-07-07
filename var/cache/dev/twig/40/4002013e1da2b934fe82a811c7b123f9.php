@@ -117,7 +117,7 @@ class __TwigTemplate_a3ea92e4f9bae5f4f4fcacf7c3e2051a extends Template
     <h5>Pour tout renseignement complémentaire, vous pouvez aussi joindre :</h5>
         <ul>
         <li>José Jimenez, président : 06.13.25.80.72</li>
-        <li>Julien Delord, professeur : 00.00.00.00.00</li>
+       
         </ul>
 
 </div>
@@ -166,7 +166,7 @@ class __TwigTemplate_a3ea92e4f9bae5f4f4fcacf7c3e2051a extends Template
                     </h4> 
                 </div>
                      <div class=\"entry-content\">
-                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                     </div>     
                 </div> 
             </div> 
@@ -216,7 +216,7 @@ class __TwigTemplate_a3ea92e4f9bae5f4f4fcacf7c3e2051a extends Template
                 </h4>
             </div>  
         <div class=\"entry-content\">
-            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+            <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
         </div>        
     </div> 
 </div>  
@@ -282,7 +282,7 @@ class __TwigTemplate_a3ea92e4f9bae5f4f4fcacf7c3e2051a extends Template
     <h5>Pour tout renseignement complémentaire, vous pouvez aussi joindre :</h5>
         <ul>
         <li>José Jimenez, président : 06.13.25.80.72</li>
-        <li>Julien Delord, professeur : 00.00.00.00.00</li>
+       
         </ul>
 
 </div>
@@ -324,7 +324,7 @@ class __TwigTemplate_a3ea92e4f9bae5f4f4fcacf7c3e2051a extends Template
                     </h4> 
                 </div>
                      <div class=\"entry-content\">
-                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                     </div>     
                 </div> 
             </div> 
@@ -367,7 +367,7 @@ class __TwigTemplate_a3ea92e4f9bae5f4f4fcacf7c3e2051a extends Template
                 </h4>
             </div>  
         <div class=\"entry-content\">
-            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+            <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
         </div>        
     </div> 
 </div>  

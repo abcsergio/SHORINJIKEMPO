@@ -99,42 +99,42 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
             <div class=\"text-center\">
                 <br>
         
-            ";
+                    ";
         // line 29
-        echo "    
-            <nav class=\"navbar1\">
-                <form class=\"container-fluid justify-content-start\">
+        echo "            
+                    <nav class=\"navbar1\">
+                        <form class=\"container-fluid justify-content-start\">
 
-                    <a href=\"";
+                            <a href=\"";
         // line 33
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_articles");
         echo "\" class=\"btn btn-primary  btn-md\" type=\"button\" >Tous les Articles</a>
-                    ";
+                            ";
         // line 34
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) || array_key_exists("categories", $context) ? $context["categories"] : (function () { throw new RuntimeError('Variable "categories" does not exist.', 34, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["categorie"]) {
             // line 35
-            echo "                        <a href=\"";
+            echo "                                <a href=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_articles_categorie", ["slug" => twig_get_attribute($this->env, $this->source, $context["categorie"], "slug", [], "any", false, false, false, 35)]), "html", null, true);
             echo "\" class=\"btn btn-primary  btn-md\" type=\"button\" >
-                            ";
+                                    ";
             // line 36
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "nom", [], "any", false, false, false, 36), "html", null, true);
             echo "
-                        </a>
-                    ";
+                                </a>
+                            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['categorie'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 39
         echo "
-                </form>
+                        </form>
 
-                <br>
-                
-\t\t    </nav>
+                        <br>
+                        
+                    </nav>
 
     
 
@@ -225,7 +225,7 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
         } else {
             // line 92
             echo "                        <div class=\"alert alert-warning\">
-                            <p>cette catégorie ne contient aucun article pour le moment</p>
+                            <p>cette page est en construction et ne contient aucun article pour le moment</p>
                         </div>
                     ";
         }
@@ -296,7 +296,7 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
                             </h4> 
                         </div>
                         <div class=\"entry-content\">
-                            <p>lundis et mercredis </br>adultes : de 20h00 à 22h00 </br> enfants : de 19h00 à 20h00</p>
+                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                         </div>     
                     </div> 
                 </div> 
@@ -343,7 +343,7 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
                         </h4>
                     </div>  
                     <div class=\"entry-content\">
-                        <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                        <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                     </div>        
                 </div> 
             </div>  
@@ -393,34 +393,34 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
             <div class=\"text-center\">
                 <br>
         
-            {# <div class=\"col-md-2 justify-content-center pt-4 \">
-                <ul class=\"list-group\"> 
-        
-                    <a class=\"d-flex align-items-start flex-column bd-highlight mb-3 text-decoration-none rounded\" href=\"{{ path('app_articles') }}\"> <li class=\"list-group-item btn btn-secondary text-center\"><strong>Tous les Articles</strong></li> </a>  
-        
-        
-                    {% for categorie in categories %}
-                        <a class=\"text-decoration-none rounded\" href=\"{{ path('app_articles_categorie', {slug: categorie.slug}) }}\"> <li class=\"list-group-item btn btn-primary text-center\">{{ categorie.nom }}</li></a> 
-                    {% endfor %}  
-            
-                </ul>
-            </div> #}
-    
-            <nav class=\"navbar1\">
-                <form class=\"container-fluid justify-content-start\">
-
-                    <a href=\"{{ path('app_articles') }}\" class=\"btn btn-primary  btn-md\" type=\"button\" >Tous les Articles</a>
-                    {% for categorie in categories %}
-                        <a href=\"{{ path('app_articles_categorie', {slug: categorie.slug}) }}\" class=\"btn btn-primary  btn-md\" type=\"button\" >
-                            {{categorie.nom}}
-                        </a>
-                    {% endfor %}
-
-                </form>
-
-                <br>
+                    {# <div class=\"col-md-2 justify-content-center pt-4 \">
+                        <ul class=\"list-group\"> 
                 
-\t\t    </nav>
+                            <a class=\"d-flex align-items-start flex-column bd-highlight mb-3 text-decoration-none rounded\" href=\"{{ path('app_articles') }}\"> <li class=\"list-group-item btn btn-secondary text-center\"><strong>Tous les Articles</strong></li> </a>  
+                
+                
+                            {% for categorie in categories %}
+                                <a class=\"text-decoration-none rounded\" href=\"{{ path('app_articles_categorie', {slug: categorie.slug}) }}\"> <li class=\"list-group-item btn btn-primary text-center\">{{ categorie.nom }}</li></a> 
+                            {% endfor %}  
+                    
+                        </ul>
+                    </div> #}
+            
+                    <nav class=\"navbar1\">
+                        <form class=\"container-fluid justify-content-start\">
+
+                            <a href=\"{{ path('app_articles') }}\" class=\"btn btn-primary  btn-md\" type=\"button\" >Tous les Articles</a>
+                            {% for categorie in categories %}
+                                <a href=\"{{ path('app_articles_categorie', {slug: categorie.slug}) }}\" class=\"btn btn-primary  btn-md\" type=\"button\" >
+                                    {{categorie.nom}}
+                                </a>
+                            {% endfor %}
+
+                        </form>
+
+                        <br>
+                        
+                    </nav>
 
     
 
@@ -469,7 +469,7 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
 
                     {% else %}
                         <div class=\"alert alert-warning\">
-                            <p>cette catégorie ne contient aucun article pour le moment</p>
+                            <p>cette page est en construction et ne contient aucun article pour le moment</p>
                         </div>
                     {% endif %}
 \t        </div>
@@ -571,7 +571,7 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
                             </h4> 
                         </div>
                         <div class=\"entry-content\">
-                            <p>lundis et mercredis </br>adultes : de 20h00 à 22h00 </br> enfants : de 19h00 à 20h00</p>
+                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                         </div>     
                     </div> 
                 </div> 
@@ -612,7 +612,7 @@ class __TwigTemplate_aafb6fd35897f317c6424acbd99b950b extends Template
                         </h4>
                     </div>  
                     <div class=\"entry-content\">
-                        <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                        <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                     </div>        
                 </div> 
             </div>  

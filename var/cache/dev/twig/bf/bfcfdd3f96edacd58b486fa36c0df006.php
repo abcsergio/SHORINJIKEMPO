@@ -203,7 +203,7 @@ class __TwigTemplate_64a6df779531c782502546f9b9209b3c extends Template
                                     </h4> 
                                 </div>
                                     <div class=\"entry-content\">
-                                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                                <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                     </div>     
                                 </div> 
                             </div> 
@@ -253,7 +253,7 @@ class __TwigTemplate_64a6df779531c782502546f9b9209b3c extends Template
                                 </h4>
                             </div>  
                         <div class=\"entry-content\">
-                            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                            <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                         </div>        
                     </div> 
                 </div>  
@@ -387,7 +387,7 @@ class __TwigTemplate_64a6df779531c782502546f9b9209b3c extends Template
                                     </h4> 
                                 </div>
                                     <div class=\"entry-content\">
-                                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                                <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                     </div>     
                                 </div> 
                             </div> 
@@ -430,7 +430,7 @@ class __TwigTemplate_64a6df779531c782502546f9b9209b3c extends Template
                                 </h4>
                             </div>  
                         <div class=\"entry-content\">
-                            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                            <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                         </div>        
                     </div> 
                 </div>  

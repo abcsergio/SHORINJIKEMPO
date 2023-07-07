@@ -14,34 +14,34 @@
             <div class="text-center">
                 <br>
         
-            {# <div class="col-md-2 justify-content-center pt-4 ">
-                <ul class="list-group"> 
-        
-                    <a class="d-flex align-items-start flex-column bd-highlight mb-3 text-decoration-none rounded" href="{{ path('app_articles') }}"> <li class="list-group-item btn btn-secondary text-center"><strong>Tous les Articles</strong></li> </a>  
-        
-        
-                    {% for categorie in categories %}
-                        <a class="text-decoration-none rounded" href="{{ path('app_articles_categorie', {slug: categorie.slug}) }}"> <li class="list-group-item btn btn-primary text-center">{{ categorie.nom }}</li></a> 
-                    {% endfor %}  
-            
-                </ul>
-            </div> #}
-    
-            <nav class="navbar1">
-                <form class="container-fluid justify-content-start">
-
-                    <a href="{{ path('app_articles') }}" class="btn btn-primary  btn-md" type="button" >Tous les Articles</a>
-                    {% for categorie in categories %}
-                        <a href="{{ path('app_articles_categorie', {slug: categorie.slug}) }}" class="btn btn-primary  btn-md" type="button" >
-                            {{categorie.nom}}
-                        </a>
-                    {% endfor %}
-
-                </form>
-
-                <br>
+                    {# <div class="col-md-2 justify-content-center pt-4 ">
+                        <ul class="list-group"> 
                 
-		    </nav>
+                            <a class="d-flex align-items-start flex-column bd-highlight mb-3 text-decoration-none rounded" href="{{ path('app_articles') }}"> <li class="list-group-item btn btn-secondary text-center"><strong>Tous les Articles</strong></li> </a>  
+                
+                
+                            {% for categorie in categories %}
+                                <a class="text-decoration-none rounded" href="{{ path('app_articles_categorie', {slug: categorie.slug}) }}"> <li class="list-group-item btn btn-primary text-center">{{ categorie.nom }}</li></a> 
+                            {% endfor %}  
+                    
+                        </ul>
+                    </div> #}
+            
+                    <nav class="navbar1">
+                        <form class="container-fluid justify-content-start">
+
+                            <a href="{{ path('app_articles') }}" class="btn btn-primary  btn-md" type="button" >Tous les Articles</a>
+                            {% for categorie in categories %}
+                                <a href="{{ path('app_articles_categorie', {slug: categorie.slug}) }}" class="btn btn-primary  btn-md" type="button" >
+                                    {{categorie.nom}}
+                                </a>
+                            {% endfor %}
+
+                        </form>
+
+                        <br>
+                        
+                    </nav>
 
     
 
@@ -90,7 +90,7 @@
 
                     {% else %}
                         <div class="alert alert-warning">
-                            <p>cette catégorie ne contient aucun article pour le moment</p>
+                            <p>cette page est en construction et ne contient aucun article pour le moment</p>
                         </div>
                     {% endif %}
 	        </div>
@@ -192,7 +192,7 @@
                             </h4> 
                         </div>
                         <div class="entry-content">
-                            <p>lundis et mercredis </br>adultes : de 20h00 à 22h00 </br> enfants : de 19h00 à 20h00</p>
+                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                         </div>     
                     </div> 
                 </div> 
@@ -233,7 +233,7 @@
                         </h4>
                     </div>  
                     <div class="entry-content">
-                        <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                        <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                     </div>        
                 </div> 
             </div>  

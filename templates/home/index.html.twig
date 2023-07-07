@@ -5,49 +5,52 @@
 {% block content %}
 
 <div class="example-wrapper">
-<div class="text-center mb-5">
-    <img src={{asset('photos/autre/logo_rouge-gris-noir_fond-clair.png')}} width = "20%">
+    <div class="text-center mb-5">
+        <img src={{asset('photos/autre/logo_rouge-gris-noir_fond-clair.png')}} width = "20%">
 
-    <hr>
-        <h1 class="title">Voici nos dernières actualités</h1>
-</div> 
+        <hr>
+            <h1 class="title">Voici nos dernières actualités</h1>
+    </div> 
 
-<div class="justify-content-center">
-{% for actualite in actualites %}
-    <div class="row justify-content-center">
+            <div class="justify-content-center">
+            {% if  actualites is not empty %}
+            {% for actualite in actualites %}
+                <div class="row justify-content-center">
 
-    <div class="col card mb-3" style="max-width:1200px">
-    
-                <div class="row g-0">
-                    <div class="col-md-6 text-center">
-                            <div class="inner3">
-                                <img src="{{ asset('photos/article/' ~ actualite.photo) }}" class="sizePhotoHome" class="img-fluid rounded-start"  alt="{{ actualite.titre }}">
-                            </div>
-                    </div>
-                        <div class="col-md-6">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">
-                                <h5 class="title">{{ actualite.titre}} <a href="{{ path('app_actualite_show' , {id: actualite.id} ) }}" ></a></h5>
-                            <p>crée le : {{ actualite.dateDeCreation | date ( " d/m/Y \à H\\hi" ) }}</p>
-                             
-                                   
-                                   
-                                <p class="text-decoration-none text-dark" href="" >{{ actualite.description | slice(0,400) }} </p>
-                                <a href="{{ path('app_actualite_show' , {id: actualite.id} ) }}" class="btn btn-primary card-link">lire l'actu</a>
+                <div class="col card mb-3" style="max-width:1200px">
+                
+                            <div class="row g-0">
+                                <div class="col-md-6 text-center">
+                                        <div class="inner3">
+                                            <img src="{{ asset('photos/article/' ~ actualite.photo) }}" class="sizePhotoHome" class="img-fluid rounded-start"  alt="{{ actualite.titre }}">
+                                        </div>
+                                </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title">
+                                            <h5 class="title">{{ actualite.titre}} <a href="{{ path('app_actualite_show' , {id: actualite.id} ) }}" ></a></h5>
+                                        <p>crée le : {{ actualite.dateDeCreation | date ( " d/m/Y \à H\\hi" ) }}</p>
                                         
-                                
-                                </h4>           
-                            </div> 
-                        </div>               
+                                            
+                                            
+                                            <p class="text-decoration-none text-dark" href="" >{{ actualite.description | slice(0,400) }} </p>
+                                            <a href="{{ path('app_actualite_show' , {id: actualite.id} ) }}" class="btn btn-primary card-link">lire l'actu</a>
+                                                    
+                                            
+                                            </h4>           
+                                        </div> 
+                                    </div>               
+                            </div>
+                        </div>
+                
+
+                </div>    
+            {% endfor %}
+                {% else %}
+                <div class="alert alert-warning">
+                    <p>cette page est en construction et ne contient aucune actualité pour le moment</p>
                 </div>
-            </div>
-       
-
-    </div>    
-{% endfor %}
-
-
-
+                {% endif %}       
 
 
 <br>
@@ -88,7 +91,7 @@
                                             </h4> 
                                         </div>
                                             <div class="entry-content">
-                                                <p>lundis et mercredis </br>adultes : de 20h00 à 22h00 </br> enfants : de 19h00 à 20h00</p>
+                                        <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                             </div>     
                                         </div> 
                                     </div> 
@@ -131,7 +134,7 @@
                                             </h4>
                                         </div>  
                                     <div class="entry-content">
-                                        <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                                        <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                                     </div>        
                                 </div> 
                                 </div>  

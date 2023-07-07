@@ -134,8 +134,8 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                     <div class=\"justify-content-center\">
                         <h5>Horaires des cours</h5>
                             
-                        <p>Lundi 18h-20h : enfants</p>
-                        <p>Lundi et Mercredi 20h-22h : adultes</p>
+                       
+                        <p>Lundi et Mercredi : 20h-22h </p>
                                                            
                     </div>
 
@@ -157,10 +157,10 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                     
 
                     <div class=\"justify-content-center\">
-                        <h5>Tarifs</h5>
+                        <h5>Tarif</h5>
                            
-                        <p>Enfants jusqu'à 15 ans  : 150 €</p>
-                        <h5>Adultes : 180 €</h5>
+                        
+                        <h6> <strong> 180€</strong></h6>
                          
                         <p><i>Chèque à l'ordre du Shorinji Kempo club de Gennevilliers</i></p>          
                     </div>
@@ -216,7 +216,7 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                                     </h4> 
                                 </div>
                                     <div class=\"entry-content\">
-                                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                                <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                     </div>     
                                 </div> 
                             </div> 
@@ -266,7 +266,7 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                                 </h4>
                             </div>  
                         <div class=\"entry-content\">
-                            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                            <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                         </div>        
                     </div> 
                 </div>  
@@ -346,8 +346,8 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                     <div class=\"justify-content-center\">
                         <h5>Horaires des cours</h5>
                             
-                        <p>Lundi 18h-20h : enfants</p>
-                        <p>Lundi et Mercredi 20h-22h : adultes</p>
+                       
+                        <p>Lundi et Mercredi : 20h-22h </p>
                                                            
                     </div>
 
@@ -369,10 +369,10 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                     
 
                     <div class=\"justify-content-center\">
-                        <h5>Tarifs</h5>
+                        <h5>Tarif</h5>
                            
-                        <p>Enfants jusqu'à 15 ans  : 150 €</p>
-                        <h5>Adultes : 180 €</h5>
+                        
+                        <h6> <strong> 180€</strong></h6>
                          
                         <p><i>Chèque à l'ordre du Shorinji Kempo club de Gennevilliers</i></p>          
                     </div>
@@ -420,7 +420,7 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                                     </h4> 
                                 </div>
                                     <div class=\"entry-content\">
-                                        <p>Entrainements de 20h00 à 22h00 les lundis et mercredis</p>
+                                <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                     </div>     
                                 </div> 
                             </div> 
@@ -463,7 +463,7 @@ class __TwigTemplate_bcde689ec489fab159f0795890665aa8 extends Template
                                 </h4>
                             </div>  
                         <div class=\"entry-content\">
-                            <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                            <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                         </div>        
                     </div> 
                 </div>  

@@ -290,7 +290,7 @@ class __TwigTemplate_ed2f7989633736d955e16ffc92fb65a5 extends Template
                                     </h4> 
                                 </div>
                                 <div class=\"entry-content\">
-                                    <p>lundis et mercredis </br>adultes : de 20h00 à 22h00 </br> enfants : de 19h00 à 20h00</p>
+                                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                 </div>     
                             </div> 
                         </div> 
@@ -336,7 +336,7 @@ class __TwigTemplate_ed2f7989633736d955e16ffc92fb65a5 extends Template
                                 </h4>
                             </div>  
                             <div class=\"entry-content\">
-                                <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                                <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                             </div>        
                         </div> 
                     </div>  
@@ -552,7 +552,7 @@ class __TwigTemplate_ed2f7989633736d955e16ffc92fb65a5 extends Template
                                     </h4> 
                                 </div>
                                 <div class=\"entry-content\">
-                                    <p>lundis et mercredis </br>adultes : de 20h00 à 22h00 </br> enfants : de 19h00 à 20h00</p>
+                                    <p>lundi et mercredi </br> de 20h00 à 22h00 </p>
                                 </div>     
                             </div> 
                         </div> 
@@ -592,7 +592,7 @@ class __TwigTemplate_ed2f7989633736d955e16ffc92fb65a5 extends Template
                                 </h4>
                             </div>  
                             <div class=\"entry-content\">
-                                <p>shorinjikempogennevilliers@gmail.com </br>01.41.47.00.85</p>
+                                <p>shorinjikempogennevilliers@gmail.com </br>06.13.25.80.72</p>
                             </div>        
                         </div> 
                     </div>  
